@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SearchMonster/static/css/main.d1e1d396.chunk.css",
-    "main.js": "/SearchMonster/static/js/main.a26a5d3c.chunk.js",
-    "main.js.map": "/SearchMonster/static/js/main.a26a5d3c.chunk.js.map",
+    "main.js": "/SearchMonster/static/js/main.0e3c22f0.chunk.js",
+    "main.js.map": "/SearchMonster/static/js/main.0e3c22f0.chunk.js.map",
     "runtime-main.js": "/SearchMonster/static/js/runtime-main.4b23b7b2.js",
     "runtime-main.js.map": "/SearchMonster/static/js/runtime-main.4b23b7b2.js.map",
     "static/css/2.de424728.chunk.css": "/SearchMonster/static/css/2.de424728.chunk.css",
     "static/js/2.b985c762.chunk.js": "/SearchMonster/static/js/2.b985c762.chunk.js",
     "static/js/2.b985c762.chunk.js.map": "/SearchMonster/static/js/2.b985c762.chunk.js.map",
     "index.html": "/SearchMonster/index.html",
-    "precache-manifest.8d913e9e5677bd1abd5529e816898c28.js": "/SearchMonster/precache-manifest.8d913e9e5677bd1abd5529e816898c28.js",
+    "precache-manifest.8eb8b6a15166960b6fd1e83dded6b984.js": "/SearchMonster/precache-manifest.8eb8b6a15166960b6fd1e83dded6b984.js",
     "service-worker.js": "/SearchMonster/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/SearchMonster/static/css/2.de424728.chunk.css.map",
     "static/css/main.d1e1d396.chunk.css.map": "/SearchMonster/static/css/main.d1e1d396.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.b985c762.chunk.js",
     "static/css/main.d1e1d396.chunk.css",
-    "static/js/main.a26a5d3c.chunk.js"
+    "static/js/main.0e3c22f0.chunk.js"
   ]
 }
