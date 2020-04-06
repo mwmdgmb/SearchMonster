@@ -9,20 +9,24 @@ export class App extends Component {
     super(props);
     this.state = {
       monsters: [],
-      searchField: ""
+      searchField: "",
+      isLoading: true
     };
   }
 
   componentDidMount() {
     axios("https://jsonplaceholder.typicode.com/users").then(users =>
-      this.setState({ monsters: users.data })
+      this.setState({
+        monsters: users.data,
+        isLoading: !this.state.isLoading
+      })
     );
   }
   onSearchChange = e => {
     this.setState({ searchField: e.target.value });
   };
   render() {
-    const { monsters, searchField } = this.state;
+    const { monsters, searchField, isLoading } = this.state;
     const filteredMonsters = monsters.filter(monster =>
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
@@ -33,7 +37,11 @@ export class App extends Component {
           onSearchChange={this.onSearchChange}
           placeholder="Search Monster"
         />
-        <CardList monsters={filteredMonsters} />
+        {isLoading ? (
+          <h1 className="display-1 text-danger">loading...</h1>
+        ) : (
+          <CardList monsters={filteredMonsters} />
+        )}
       </div>
     );
   }
