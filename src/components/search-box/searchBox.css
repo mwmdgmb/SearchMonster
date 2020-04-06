@@ -1,0 +1,21 @@
+.searchBox {
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 1px solid #0ccac4;
+  outline: none;
+  padding: 10px;
+  width: 150px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  width: 180px;
+}
+
+.searchBox:focus {
+  box-shadow: 0 0 50px #0ccac4;
+}
