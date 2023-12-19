@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import axios from "axios";
 import "./App.css";
-import SearchBox from "./components/search-box/SearchBox";
 import CardList from "./components/card-list/CardList";
+import React, { Component } from "react";
+import SearchBox from "./components/search-box/SearchBox";
+import axios from "axios";
 
 export class App extends Component {
   constructor(props) {
@@ -10,24 +10,24 @@ export class App extends Component {
     this.state = {
       monsters: [],
       searchField: "",
-      isLoading: true
+      isLoading: true,
     };
   }
 
   componentDidMount() {
-    axios("https://jsonplaceholder.typicode.com/users").then(users =>
+    axios("https://jsonplaceholder.typicode.com/users").then((users) =>
       this.setState({
         monsters: users.data,
-        isLoading: !this.state.isLoading
+        isLoading: !this.state.isLoading,
       })
     );
   }
-  onSearchChange = e => {
+  onSearchChange = (e) => {
     this.setState({ searchField: e.target.value });
   };
   render() {
     const { monsters, searchField, isLoading } = this.state;
-    const filteredMonsters = monsters.filter(monster =>
+    const filteredMonsters = monsters.filter((monster) =>
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
     return (
@@ -35,7 +35,7 @@ export class App extends Component {
         <h1>Monster Rolodex</h1>
         <SearchBox
           onSearchChange={this.onSearchChange}
-          placeholder="Search Monster"
+          placeholder="Search Monster right now..."
         />
         {isLoading ? (
           <h1 className="display-1 text-danger">loading...</h1>
